@@ -9,7 +9,7 @@ int main()
 
     // Operações
     float diametro;
-    float circumferencia;
+    float circunferencia;
     float area;
 
     printf("Valor do raio do circulo: ");
@@ -17,11 +17,11 @@ int main()
 
     // Executa as operações
     diametro = raio * 2;
-    circumferencia = raio * 2 * pi;
+    circunferencia = raio * 2 * pi;
     area = pi * (raio * raio);
 
     printf("Diametro = %.2f\n", diametro);
-    printf("Circumeferencia = %.2f\n", circumferencia);
+    printf("Circunferencia = %.2f\n", circunferencia);
     printf("Area = %.2f\n", area);
 
     return 0;
