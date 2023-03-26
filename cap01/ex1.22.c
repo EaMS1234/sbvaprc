@@ -11,7 +11,7 @@ int main()
 
     valorComDesconto = valor * 0.91;
 
-    printf("Preco da venda com 9%% de desconto: %.2f\n", valorComDesconto);
+    printf("Preco de venda com 9%% de desconto: %.2f\n", valorComDesconto);
 
     return 0;
 }
