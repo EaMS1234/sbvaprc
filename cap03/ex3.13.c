@@ -12,50 +12,42 @@ int main()
     int divisiveis3 = 0;
     int divisiveis4 = 0;
 
+    int maior;
+    int menor;
+
     printf("N1: ");
     scanf("%d", &numero1);
 
     printf("N2: ");
     scanf("%d", &numero2);
 
-    if (numero2 >= numero1)
+    // Ordena o maior e o menor
+    if (numero1 >= numero2)
     {
-        for (int i = numero1; i <= numero2; i++)
-        {
-            if (i % 2 == 0)
-            {
-                divisiveis2++;
-            }
-
-            if (i % 3 == 0)
-            {
-                divisiveis3++;
-            }
-
-            if (i % 4 == 0)
-            {
-                divisiveis4++;
-            }
-        }
+        maior = numero1;
+        menor = numero2;
     }
     else
     {
-        for (int i = numero2; i <= numero1; i++)
+        maior = numero2;
+        menor = numero1;
+    }
+
+    for (int i = menor; i <= maior; i++)
+    {
+        if (i % 2 == 0)
         {
-            if (i % 2 == 0)
-            {
-                divisiveis2++;
-            }
+            divisiveis2++;
+        }
 
-            if (i % 3 == 0)
-            {
-                divisiveis3++;
-            }
+        if (i % 3 == 0)
+        {
+            divisiveis3++;
+        }
 
-            if (i % 4 == 0)
-            {
-                divisiveis4++;
-            }
+        if (i % 4 == 0)
+        {
+            divisiveis4++;
         }
     }
 
