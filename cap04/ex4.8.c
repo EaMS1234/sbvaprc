@@ -7,8 +7,8 @@ int main()
     int qtdImpares = 0;
 
     int array[5];
-    int pares[] = {0, 0, 0, 0, 0};
-    int impares[] = {0, 0, 0, 0, 0};
+    int pares[5];
+    int impares[5];
 
     for (int i = 0; i < 5; i++)
     {
@@ -17,12 +17,12 @@ int main()
 
         if (array[i] % 2 == 0)
         {
-            pares[i] = array[i];
+            pares[qtdPares] = array[i];
             qtdPares++;
         }
         else
         {
-            impares[i] = array[i];
+            impares[qtdImpares] = array[i];
             qtdImpares++;
         }
     }
@@ -32,14 +32,9 @@ int main()
     {
         // Caso haja números pares ...
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < qtdPares; i++)
         {
-            if (pares[i] != 0)
-            {
-                // ... diferentes de zero
-
-                printf(" %d", pares[i]);
-            }
+            printf(" %d", pares[i]);
         }
 
         printf(".\n");
@@ -54,7 +49,7 @@ int main()
     {
         // Caso haja números ímpares
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < qtdImpares; i++)
         {
             if (impares[i] != 0)
             {

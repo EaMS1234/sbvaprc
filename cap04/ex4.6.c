@@ -7,7 +7,7 @@ int main()
     int qtd = 0;
 
     int array[5];
-    int posArray[5] = {-1, -1, -1, -1, -1};
+    int posArray[5];
 
     for (int i = 0; i < 5; i++)
     {
