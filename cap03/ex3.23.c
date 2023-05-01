@@ -3,8 +3,8 @@
 
 int main()
 {
-    float notaAtual;
-    float media;
+    float notaAtual = 0;
+    float media = 0;
 
     for (int i = 1; i <= 10; i++)
     {
