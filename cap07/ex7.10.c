@@ -3,17 +3,18 @@
 
 int calculaDigito(int n)
 {
-    int contador = 1000;
     int verificador = 0;
 
-    while (contador >= 1 && n / contador >= 1)
-    {
-        
+    int milhares = n / 1000;
+    int centenas = (n - (milhares * 1000)) / 100;
+    int dezenas = (n - (milhares * 1000) - (centenas * 100)) / 10;
+    int unidades = (n - (milhares * 1000) - (centenas * 100) - (dezenas * 10));
 
-        contador / 10;
-    }
+    verificador = 11 - (((unidades * 2) + (dezenas * 3) +
+                         (centenas * 4) + (milhares * 5)) %
+                        11);
 
-    return verificador;
+    return verificador >= 10 ? 0 : verificador;
 }
 
 int main()
