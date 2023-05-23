@@ -1,19 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void classificaDupla(int n1, int n2)
-{
-    printf("%d e %d: ", n1, n2);
-
-    if (n1 <= n2)
-    {
-        printf("%d <= %d\n", n1, n2);
-    }
-    else
-    {
-        printf("%d <= %d\n", n2, n1);
-    }
-}
+void classificaDupla(int n1, int n2);
 
 int main()
 {
@@ -35,4 +23,18 @@ int main()
     }
 
     return 0;
+}
+
+void classificaDupla(int n1, int n2)
+{
+    printf("%d e %d: ", n1, n2);
+
+    if (n1 <= n2)
+    {
+        printf("%d <= %d\n", n1, n2);
+    }
+    else
+    {
+        printf("%d <= %d\n", n2, n1);
+    }
 }

@@ -5,22 +5,7 @@
 #define true 1
 #define false 0
 
-void imprimeDuplaClassificada(int n1, int n2, bool emOrdemCrescente)
-{
-    int maior = n1 >= n2 ? n1 : n2;
-    int menor = n1 >= n2 ? n2 : n1;
-
-    printf("%d e %d: ", n1, n2);
-
-    if (emOrdemCrescente)
-    {
-        printf("%d <= %d\n", menor, maior);
-    }
-    else
-    {
-        printf("%d >= %d\n", maior, menor);
-    }
-}
+void imprimeDuplaClassificada(int n1, int n2, bool emOrdemCrescente);
 
 int main()
 {
@@ -42,4 +27,21 @@ int main()
     }
 
     return 0;
+}
+
+void imprimeDuplaClassificada(int n1, int n2, bool emOrdemCrescente)
+{
+    int maior = n1 >= n2 ? n1 : n2;
+    int menor = n1 >= n2 ? n2 : n1;
+
+    printf("%d e %d: ", n1, n2);
+
+    if (emOrdemCrescente)
+    {
+        printf("%d <= %d\n", menor, maior);
+    }
+    else
+    {
+        printf("%d >= %d\n", maior, menor);
+    }
 }

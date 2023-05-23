@@ -5,20 +5,7 @@
 #define true 1
 #define false 0
 
-bool ehPrimo(int n)
-{
-    int divisores = 0;
-
-    for (int i = 1; i < n; i++)
-    {
-        if (n % i == 0)
-        {
-            divisores++;
-        }
-    }
-
-    return divisores == 1 ? true : false;
-}
+bool ehPrimo(int n);
 
 int main()
 {
@@ -35,4 +22,19 @@ int main()
     }
 
     return 0;
+}
+
+bool ehPrimo(int n)
+{
+    int divisores = 0;
+
+    for (int i = 1; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            divisores++;
+        }
+    }
+
+    return divisores == 1 ? true : false;
 }

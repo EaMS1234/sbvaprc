@@ -5,6 +5,35 @@
 #define true 1
 #define false 0
 
+int calculaDigito(int n);
+int obtemDigito(int n);
+int obtemNumero(int n);
+bool numeroCorreto(int n);
+
+int main()
+{
+    int numero;
+
+    printf("Numero: ");
+    scanf("%d", &numero);
+
+    printf("Numero completo: %d\n", numero);
+    printf("Numero: %d\n", obtemNumero(numero));
+    printf("Digito: %d\n", obtemDigito(numero));
+    printf("Digito calculado: %d\n", calculaDigito(obtemNumero(numero)));
+
+    if (numeroCorreto(numero))
+    {
+        printf("O numero fornecido esta correto!\n");
+    }
+    else
+    {
+        printf("O numero fornecido esta incorreto!\n");
+    }
+
+    return 0;
+}
+
 int calculaDigito(int n)
 {
     int verificador = 0;
@@ -45,28 +74,4 @@ bool numeroCorreto(int n)
     {
         return false;
     }
-}
-
-int main()
-{
-    int numero;
-
-    printf("Numero: ");
-    scanf("%d", &numero);
-
-    printf("Numero completo: %d\n", numero);
-    printf("Numero: %d\n", obtemNumero(numero));
-    printf("Digito: %d\n", obtemDigito(numero));
-    printf("Digito calculado: %d\n", calculaDigito(obtemNumero(numero)));
-
-    if (numeroCorreto(numero))
-    {
-        printf("O numero fornecido esta correto!\n");
-    }
-    else
-    {
-        printf("O numero fornecido esta incorreto!\n");
-    }
-
-    return 0;
 }

@@ -1,6 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void classificaTrinca(int n1, int n2, int n3);
+
+int main()
+{
+    int n1[3];
+    int n2[3];
+    int n3[3];
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("n1[%d]: ", i);
+        scanf("%d", &n1[i]);
+
+        printf("n2[%d]: ", i);
+        scanf("%d", &n2[i]);
+
+        printf("n2[%d]: ", i);
+        scanf("%d", &n3[i]);
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        classificaTrinca(n1[i], n2[i], n3[i]);
+    }
+
+    return 0;
+}
+
 void classificaTrinca(int n1, int n2, int n3)
 {
     int maior;
@@ -29,30 +57,4 @@ void classificaTrinca(int n1, int n2, int n3)
     }
 
     printf("%d <= %d <= %d\n", menor, meio, maior);
-}
-
-int main()
-{
-    int n1[3];
-    int n2[3];
-    int n3[3];
-
-    for (int i = 0; i < 3; i++)
-    {
-        printf("n1[%d]: ", i);
-        scanf("%d", &n1[i]);
-
-        printf("n2[%d]: ", i);
-        scanf("%d", &n2[i]);
-
-        printf("n2[%d]: ", i);
-        scanf("%d", &n3[i]);
-    }
-
-    for (int i = 0; i < 3; i++)
-    {
-        classificaTrinca(n1[i], n2[i], n3[i]);
-    }
-
-    return 0;
 }

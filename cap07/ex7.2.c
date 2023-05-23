@@ -4,15 +4,8 @@
 
 #define pi acos(-1)
 
-float areaCirculo(float raio)
-{
-    return (pi * (raio * raio));
-}
-
-float circunferenciaCirculo(float raio)
-{
-    return (2 * pi * raio);
-}
+float areaCirculo(float raio);
+float circunferenciaCirculo(float raio);
 
 int main()
 {
@@ -25,4 +18,14 @@ int main()
     printf("Circunferencia = %.2f\n", circunferenciaCirculo(raio));
 
     return 0;
+}
+
+float areaCirculo(float raio)
+{
+    return (pi * (raio * raio));
+}
+
+float circunferenciaCirculo(float raio)
+{
+    return (2 * pi * raio);
 }

@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float maiorNumero(float n1, float n2)
-{
-    if (n1 >= n2)
-    {
-        return n1;
-    }
-    else
-    {
-        return n2;
-    }
-}
+float maiorNumero(float n1, float n2);
 
 int main()
 {
@@ -66,4 +56,16 @@ int main()
     }
 
     return 0;
+}
+
+float maiorNumero(float n1, float n2)
+{
+    if (n1 >= n2)
+    {
+        return n1;
+    }
+    else
+    {
+        return n2;
+    }
 }

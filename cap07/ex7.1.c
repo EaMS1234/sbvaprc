@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int absoluto(int n)
-{
-    if (n >= 0)
-    {
-        return n;
-    }
-    else
-    {
-        return n * -1;
-    }
-}
+int absoluto(int n);
 
 int main()
 {
@@ -29,4 +19,16 @@ int main()
     }
 
     return 0;
+}
+
+int absoluto(int n)
+{
+    if (n >= 0)
+    {
+        return n;
+    }
+    else
+    {
+        return n * -1;
+    }
 }

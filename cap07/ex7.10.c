@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int calculaDigito(int n);
+
+int main()
+{
+    int numero;
+
+    printf("Numero: ");
+    scanf("%d", &numero);
+
+    printf("Digito verificador de %d: %d\n", numero, calculaDigito(numero));
+
+    return 0;
+}
+
 int calculaDigito(int n)
 {
     int verificador = 0;
@@ -15,16 +29,4 @@ int calculaDigito(int n)
                         11);
 
     return verificador >= 10 ? 0 : verificador;
-}
-
-int main()
-{
-    int numero;
-
-    printf("Numero: ");
-    scanf("%d", &numero);
-
-    printf("Digito verificador de %d: %d\n", numero, calculaDigito(numero));
-
-    return 0;
 }

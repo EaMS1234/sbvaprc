@@ -1,50 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int lePositivo()
-{
-    int numero;
-
-    while (1)
-    {
-        scanf("%d", &numero);
-
-        if (numero < 0)
-        {
-            printf("Entre com um valor positivo: ");
-        }
-        else
-        {
-            return numero;
-        }
-    }
-}
-
-int tipoTriangulo(int ladoA, int ladoB, int ladoC)
-{
-    if (abs(ladoB - ladoC) < ladoA && ladoA < ladoB + ladoC &&
-        abs(ladoA - ladoC) < ladoB && ladoB < ladoA + ladoC &&
-        abs(ladoA - ladoB) < ladoC && ladoC < ladoA + ladoB)
-    {
-        if (ladoA == ladoB || ladoB == ladoC || ladoC == ladoA)
-        {
-            if (ladoA == ladoB && ladoB == ladoC)
-            {
-                // Equilátero
-                return 1;
-            }
-
-            // Isóceles
-            return 2;
-        }
-
-        // Escaleno
-        return 3;
-    }
-
-    // Não forma um triângulo
-    return 0;
-}
+int lePositivo();
+int tipoTriangulo(int ladoA, int ladoB, int ladoC);
 
 int main()
 {
@@ -88,5 +46,50 @@ int main()
         }
     }
 
+    return 0;
+}
+
+int lePositivo()
+{
+    int numero;
+
+    while (1)
+    {
+        scanf("%d", &numero);
+
+        if (numero < 0)
+        {
+            printf("Entre com um valor positivo: ");
+        }
+        else
+        {
+            return numero;
+        }
+    }
+}
+
+int tipoTriangulo(int ladoA, int ladoB, int ladoC)
+{
+    if (abs(ladoB - ladoC) < ladoA && ladoA < ladoB + ladoC &&
+        abs(ladoA - ladoC) < ladoB && ladoB < ladoA + ladoC &&
+        abs(ladoA - ladoB) < ladoC && ladoC < ladoA + ladoB)
+    {
+        if (ladoA == ladoB || ladoB == ladoC || ladoC == ladoA)
+        {
+            if (ladoA == ladoB && ladoB == ladoC)
+            {
+                // Equilátero
+                return 1;
+            }
+
+            // Isóceles
+            return 2;
+        }
+
+        // Escaleno
+        return 3;
+    }
+
+    // Não forma um triângulo
     return 0;
 }

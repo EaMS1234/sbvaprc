@@ -5,15 +5,8 @@
 #define true 1
 #define false 0
 
-bool ehPar(int n)
-{
-    return n % 2 == 0 ? true : false;
-}
-
-bool ehDivisivel(int dividendo, int divisor)
-{
-    return dividendo % divisor == 0 ? true : false;
-}
+bool ehPar(int n);
+bool ehDivisivel(int dividendo, int divisor);
 
 int main()
 {
@@ -57,4 +50,14 @@ int main()
     }
 
     return 0;
+}
+
+bool ehPar(int n)
+{
+    return n % 2 == 0 ? true : false;
+}
+
+bool ehDivisivel(int dividendo, int divisor)
+{
+    return dividendo % divisor == 0 ? true : false;
 }
