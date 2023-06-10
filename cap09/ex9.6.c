@@ -4,10 +4,10 @@
 
 int main()
 {
-    char nome[256];
+    char nome[40];
 
     printf("Nome: ");
-    fgets(nome, 256, stdin);
+    fgets(nome, 40, stdin);
     nome[strlen(nome) - 1] = '\0';
 
     for (int i = 0; i < strlen(nome); i++)

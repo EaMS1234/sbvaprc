@@ -10,14 +10,14 @@ int main()
     int idxMeio;
     int idxMenor;
 
-    char entrada[256];
-    char string[3][256];
+    char entrada[40];
+    char string[3][40];
 
     for (int i = 0; i < 3; i++)
     {
         printf("String %d: ", i + 1);
 
-        fgets(entrada, 256, stdin);
+        fgets(entrada, 40, stdin);
         entrada[strlen(entrada) - 1] = '\0';
 
         n = 0;

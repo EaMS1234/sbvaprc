@@ -7,8 +7,8 @@ int main()
 {
     int k = 0;
 
-    char palavra[256];
-    char pares[5][2][256];
+    char palavra[40];
+    char pares[5][2][40];
 
     // Lê as palavras
     for (int i = 0; i < 5; i++)
@@ -18,7 +18,7 @@ int main()
             printf("Par %d, palavra %d: ", i + 1, j + 1);
 
             // Recebe e salva o array de forma correta
-            fgets(palavra, 256, stdin);
+            fgets(palavra, 40, stdin);
             palavra[strlen(palavra) - 1] = '\0';
 
             // Salva o array 'palavra' em 'pares[i][j]'

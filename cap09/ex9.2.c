@@ -4,10 +4,10 @@
 
 int main()
 {
-    char sentenca[256];
+    char sentenca[40];
 
     printf("Sentenca: ");
-    fgets(sentenca, 256, stdin);
+    fgets(sentenca, 40, stdin);
     sentenca[strlen(sentenca) - 1] = '\0';
 
     printf("Primeiro caractere: %c\n", sentenca[0]);

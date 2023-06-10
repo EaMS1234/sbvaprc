@@ -6,10 +6,10 @@ int main()
 {
     int contagem = 0;
 
-    char string[256];
+    char string[40];
 
     printf("String: ");
-    fgets(string, 256, stdin);
+    fgets(string, 40, stdin);
     string[strlen(string) - 1] = '\0';
 
     while (1)
