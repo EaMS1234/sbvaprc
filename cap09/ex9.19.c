@@ -37,6 +37,8 @@ void substring(char *recorte, const char *origem, int inicio, int fim)
         {
             recorte[i] = origem[inicio + i];
         }
+
+        recorte[fim - inicio] = '\0';
     }
     else
     {
@@ -45,4 +47,6 @@ void substring(char *recorte, const char *origem, int inicio, int fim)
             recorte[i] = origem[i];
         }
     }
+
+    recorte[strlen(origem)] = '\0';
 }
